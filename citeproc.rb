@@ -5,20 +5,20 @@
 class Citeproc < Formula
   desc ""
   homepage ""
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/front-matter/citeproc/releases/download/v0.1.6/citeproc_Darwin_x86_64.tar.gz"
-      sha256 "739fec6c3ba00d5831ad6ff62268e37c36d81dab0ef697b06c617ee508f457b3"
+      url "https://github.com/front-matter/citeproc/releases/download/v0.1.7/citeproc_Darwin_x86_64.tar.gz"
+      sha256 "4c7e40c22e49914ab33dc2a8fcd6164a6642202d1bcdeec9353a10dbee1d5b35"
 
       def install
         bin.install "citeproc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/front-matter/citeproc/releases/download/v0.1.6/citeproc_Darwin_arm64.tar.gz"
-      sha256 "874ec82055eacea5f4095f69703828db32cb42f13630d3867762778ee7e49a9a"
+      url "https://github.com/front-matter/citeproc/releases/download/v0.1.7/citeproc_Darwin_arm64.tar.gz"
+      sha256 "39f8fe11e6c7bd7236d73ddc4ff618bf0adb870f2e102e69034a75977487bddc"
 
       def install
         bin.install "citeproc"
@@ -29,8 +29,8 @@ class Citeproc < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/front-matter/citeproc/releases/download/v0.1.6/citeproc_Linux_x86_64.tar.gz"
-        sha256 "311c7ac20b8aba55e6d404bfa33442413116e7dc2cb2f2fbbfc779e5f9782681"
+        url "https://github.com/front-matter/citeproc/releases/download/v0.1.7/citeproc_Linux_x86_64.tar.gz"
+        sha256 "31acaa2b82666e5f13244d9b59b1ce865f0743b3b6d80abc4d7a8b696c33ec1c"
 
         def install
           bin.install "citeproc"
@@ -39,8 +39,8 @@ class Citeproc < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/front-matter/citeproc/releases/download/v0.1.6/citeproc_Linux_arm64.tar.gz"
-        sha256 "5596c777e8d5faf9c8f54102489506d953d24fae0dc589d63bcc5ad84eb5276a"
+        url "https://github.com/front-matter/citeproc/releases/download/v0.1.7/citeproc_Linux_arm64.tar.gz"
+        sha256 "29e2ed152c83d969ead3a4a28399240c686f18cac86c03c0a7fad2782e0a4426"
 
         def install
           bin.install "citeproc"
